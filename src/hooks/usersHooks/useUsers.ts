@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { User } from "@/types/user";
 import { baseUrl } from "../../utils/globalVariables";
+import { getUsers } from "@/api/routes/users";
 
 export function useUsers() {
   const [users, setUsers] = useState<User[]>([]);
@@ -12,16 +13,9 @@ export function useUsers() {
       try {
         setLoading(true);
         setError(null);
-        console.log(`${baseUrl}/users`);
-        const response = await fetch(`${baseUrl}/users`);
+        const response = await getUsers();
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch users");
-        }
-
-        const data: User[] = await response.json();
-
-        setUsers(data);
+        setUsers(response);
       } catch (error) {
         setError(
           error instanceof Error ? error.message : "Something went wrong",
