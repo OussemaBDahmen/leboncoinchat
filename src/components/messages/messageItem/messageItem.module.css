@@ -1,0 +1,51 @@
+.messageContainer {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  align-self: flex-start;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: min-content;
+}
+.messageBody {
+  padding: 10px;
+  background: lightgray;
+  color: black;
+  font-weight: 600;
+  font-size: large;
+  min-height: 50px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border-radius: 35px;
+
+  box-shadow:
+    inset -7px -7px 14px lightgray,
+    inset 7px 7px 14px gray;
+}
+.timestamp {
+  align-self: flex-end;
+}
+
+.recieved {
+  align-self: flex-start;
+}
+
+.recieved .messageBody {
+  background: #ff4500;
+  color: white;
+  border-radius: 102px;
+  border-radius: 35px;
+  box-shadow:
+    inset -7px -7px 14px orange,
+    inset 7px 7px 14px orangered;
+}
