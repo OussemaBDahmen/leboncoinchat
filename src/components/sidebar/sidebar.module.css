@@ -1,0 +1,47 @@
+.sidebarContainer {
+  position: relative;
+  border-right: thin solid black;
+  padding: 15px 0px;
+  background: #464e59;
+}
+
+.expandButton {
+  position: absolute;
+  right: -10px;
+  top: 10%;
+  border-right: solid thin black;
+  height: 40px;
+  width: 20px;
+  border-radius: 5px;
+  background: #464e59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.collapsed {
+  width: 100px;
+  transition:
+    width ease-in-out 0.5s,
+    max-width ease 0.5s;
+}
+
+.expanded {
+  width: 300px;
+  transition:
+    width ease-in-out 0.5s,
+    max-width ease 0.5s;
+}
+
+@media (max-width: 639px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
