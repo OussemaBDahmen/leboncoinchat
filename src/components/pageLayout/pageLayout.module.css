@@ -1,0 +1,47 @@
+.headerContainer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: thin solid black;
+}
+
+.footerContainer {
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: thin solid black;
+}
+
+.pageContainer {
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.fullPageContainer {
+  background: linear-gradient(315deg, #161519, #1a191e) !important;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  scale: 0.5;
+}
+
+.lightMode {
+  background: linear-gradient(315deg, #e2dcf3, #e5e0f8) !important;
+  color: black;
+  display: flex;
+}
