@@ -1,0 +1,46 @@
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: thin solid white;
+  transition:
+    opacity ease 0.5s,
+    color ease 0.5s,
+    background ease 0.5s;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.itemContainer:hover {
+  background: lightgray;
+  color: black;
+}
+
+.nickname {
+  font-size: larger;
+  opacity: 1;
+  max-width: 100%;
+  transition:
+    max-width ease 0.5s,
+    opacity ease 0.3s;
+}
+.nicknameHidden {
+  opacity: 0;
+  max-width: 0%;
+  transition:
+    max-width ease 0.5s,
+    opacity ease 0.3s;
+}
+
+.collapsed {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}

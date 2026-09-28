@@ -1,0 +1,20 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  padding: 10px 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  color: white;
+}
+
+.backButton:hover {
+  opacity: 0.7;
+}
