@@ -1,0 +1,24 @@
+.messageInputField {
+  width: 80%;
+  min-height: 50px;
+  border: none;
+  border-radius: 35px;
+  color: white;
+  font-weight: 300;
+  font-size: large;
+  padding: 15px;
+  border-radius: 35px;
+  background: linear-gradient(315deg, #161519, #1a191e);
+  box-shadow:
+    -5px -5px 10px #0a090b,
+    5px 5px 10px #26252d;
+}
+
+.messageInputField:focus {
+  outline: rgba(255, 68, 0, 0.39) thin solid;
+  background: linear-gradient(315deg, #161519, #28262e);
+}
+
+.clearFieldIcon {
+  background: white;
+}

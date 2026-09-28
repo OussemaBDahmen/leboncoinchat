@@ -1,0 +1,63 @@
+/* .sendButton {
+  background: orangered;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  border: none;
+} */
+
+/* .sendButton:hover {
+  transform: translateY(-3px) rotate(-8deg);
+  background: orangered;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+} */
+
+.sendButton {
+  position: relative;
+  overflow: hidden;
+
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 14px;
+
+  background: orangered;
+  color: white;
+  cursor: pointer;
+}
+
+.sendButton:active {
+  transform: translateY(1px) scale(0.92) rotate(0deg);
+}
+
+.sendButton::after {
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.4);
+
+  transform: scale(0);
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.sendButton:active::after {
+  animation: ripple 0.5s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
